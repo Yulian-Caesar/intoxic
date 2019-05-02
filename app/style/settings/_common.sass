@@ -1,0 +1,287 @@
+// $mainColor: #000
+
+body
+	font-family: 'Roboto', sans-serif
+	font-size: 14px
+
+img
+	display: block
+	max-width: 100%
+
+svg
+	overflow: hidden
+
+a
+	color: #ffffff
+
+.form-wrap
+	width: 330px
+	flex: none
+	background: url("../img/form-bg.png") no-repeat
+	background-size: cover
+
+.form
+	width: 290px
+	margin: 0 auto
+	flex: none
+	background: #ffffff
+	box-shadow: 0 0 0px 4px #b6475f
+	border-radius: 5px
+
+.form-header
+	position: relative
+	background: #f6eef0
+	padding: 20px 20px 0
+	border-radius: 5px 5px 0 0
+
+.form-header:after
+	content: ""
+	position: absolute
+	bottom: -20px
+	left: 0
+	width: 0
+	height: 0
+	border-left: 145px solid transparent
+	border-right: 145px solid transparent
+	border-top: 21px solid #f6eef0
+
+.form-title
+	color: #000000
+	font-size: 23px
+	line-height: 1.2
+	font-weight: 500
+	text-align: center
+	margin-bottom: 15px
+
+.form-title_pink
+	white-space: nowrap
+	color: #c6637b
+
+.price
+	position: relative
+	display: flex
+	margin-bottom: 10px
+
+.price:before
+	content: ""
+	position: absolute
+	height: 100%
+	width: 2px
+	background: rgba(209, 208, 208, 0.6)
+	left: 50%
+	bottom: 0
+
+.price-item
+	width: 50%
+	text-align: center
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+
+.price-title
+	margin-bottom: 8px
+
+.price-old
+	color: #666666
+	padding-right: 10px
+
+.price-new
+	padding-left: 10px
+
+.price-title_old
+	font-size: 13px
+	line-height: 1
+
+.price-content_old
+	color: #a2a1a1
+
+.price-title_new
+	color: #30302f
+	font-size: 14px
+	line-height: 1
+
+.price-content_new
+	color: #6dc95b
+	font-weight: 700
+
+.x_price_previous
+	position: relative
+	display: inline-block
+	font-size: 28px
+	line-height: 1
+
+.x_price_previous:before,
+.x_price_previous:after
+	content: ""
+	position: absolute
+	left: 0
+	bottom: 13px
+	width: 100%
+	height: 2px
+	background: #f57373
+
+.x_price_previous:before
+	transform: rotate(20deg)
+
+.x_price_previous:after
+	transform: rotate(-20deg)
+
+.x_price_current
+	display: inline-block
+	font-size: 44px
+	line-height: 0.8
+	font-weight: 900
+
+.x_currency
+	position: relative
+	display: inline-block
+	font-size: 16px
+	line-height: 1
+
+.price-new .x_currency:after
+	content: "*"
+	position: absolute
+	right: -10px
+	top: -3px
+	font-size: 19px
+	color: #ad395a
+
+.form__lastpack
+	color: #000000
+	font-size: 16px
+	line-height: 1.2
+	font-weight: 500
+	max-width: 150px
+	text-align: center
+	margin: 0 auto
+
+.lastpack
+	color: #ba5268
+
+.form-content
+	padding: 35px 20px 0
+
+.input-box
+	position: relative
+	margin-bottom: 15px
+
+.input-box__img
+	position: absolute
+	left: 20px
+	top: 50%
+	transform: translate(0, -50%)
+
+
+.form-field
+	width: 100%
+	padding: 20px 25px 20px 55px
+	border-radius: 5px
+	height: 58px
+	box-shadow: inset 2px 3px 5px rgba(34, 35, 39, 0.09)
+	border: 1px solid #dedddd
+	background-color: #ffffff
+
+.button
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	width: 100%
+	height: 65px
+	cursor: pointer
+	background-color: #ffffff
+	background-image: linear-gradient(to right, #6ac259 0%, #70d05d 51%, #6ac259 100%)
+	border-radius: 5px
+	color: #ffffff
+	box-shadow: 0px 6px 0 0px #5cab4d
+
+.button:hover
+	background-image: linear-gradient(to right, #429b31 0%, #70d05d 51%, #429b31 100%)
+
+.button__text-1
+	display: inline-block
+	font-size: 27px
+	font-weight: 700
+
+.button__text-2
+	display: inline-block
+	font-size: 20px
+	font-weight: 400
+
+.price-descr
+	opacity: 0.7
+	color: #1f1f1f
+	font-size: 15px
+	line-height: 1.1
+	text-align: center
+	margin-top: 15px
+
+.form-footer
+	margin-top: 10px
+	display: flex
+	align-items: center
+	justify-content: center
+	padding: 13px 20px
+	box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.04);
+
+.form-footer__img
+	margin-right: 10px
+	flex: none
+
+.form-footer__text
+	color: #1f1f1f
+	font-size: 15px
+	line-height: 1.1
+
+.timer-title
+	color: #000000
+	font-size: 20px
+	line-height: 1.2
+	max-width: 180px
+	margin: 0 auto 10px
+	text-align: center
+
+.timer-title_pink
+	color: #c6637b
+
+.container
+	width: 100%
+	margin: 0 auto
+	padding: 0 10px
+	+rm(480)
+		width: 480px
+	+rm(640)
+		width: 640px
+	+rm(768)
+		width: 768px
+	+rm(1024)
+		width: 1024px
+	+rm(1190)
+		width: 1190px
+
+.title
+	font-size: 54px
+	line-height: 1.3
+	font-weight: 900
+	+r(1189)
+		font-size: 44px
+	+r(1023)
+		font-size: 36px
+		line-height: 1.1
+	+r(767)
+		font-size: 32px
+	+r(639)
+		font-size: 29px
+	+r(479)
+		font-size: 26px
+
+
+.text-bold
+	font-weight: 700
+
+.text-black
+	font-weight: 900
+
+.text-nowrap
+	white-space: nowrap
+
