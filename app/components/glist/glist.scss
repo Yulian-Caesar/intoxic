@@ -1,0 +1,135 @@
+.glist {
+  display: block;
+  padding: 110px 0 80px;
+  &__title {
+    max-width: 905px;
+    margin: 0 auto 45px;
+    text-align: center;
+    line-height: 57px;
+    span {
+      display: block;
+    }
+  }
+  &__items-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+  &__item {
+    display: block;
+    width: 100%;
+    max-width: 270px;
+    margin-bottom: 73px;
+    text-align: center;
+    &.-down {
+      margin-top: 40px;
+    }
+  }
+  &__item-image {
+  }
+  &__subtitle {
+    display: block;
+    margin: 35px auto 9px;
+    font-size: 23px;
+    font-weight: 500;
+    color: #1f1f1f;
+  }
+  &__description {
+    font-size: 19px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #444444;
+  }
+  &__warning {
+    display: block;
+    max-width: 838px;
+    position: relative;
+    margin: 0 auto;
+    padding: 21px 26px 18px;
+    color: #2f1a13;
+    font-size: 23px;
+    font-weight: 500;
+    background-color: #ffecee;
+    border-radius: 31px;
+    &:before {
+      display: block;
+      width: 40px;
+      height: 39px;
+      position: absolute;
+      content: url("../img/warning.png");
+      top: -28px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+@media all and (max-width: 1189px) {
+  .glist {
+    &__item {
+      max-width: 240px;
+      margin-bottom: 60px;
+    }
+    &__subtitle {
+      margin: 17px auto 9px;
+    }
+    &__description {
+      font-size: 18px;
+    }
+  }
+}
+@media all and (max-width: 1023px) {
+  .glist {
+    &__title {
+      margin: 0 auto 20px;
+      line-height: 40px;
+    }
+    &__items-box {
+      max-width: 630px;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    &__item {
+      margin-bottom: 25px;
+      &.-down {
+        margin-top: 0;
+      }
+    }
+    &__subtitle {
+      margin: 10px auto 5px;
+    }
+    &__description {
+    }
+    &__warning {
+      max-width: 740px;
+      margin-top: 10px;
+      font-size: 20px;
+    }
+  }
+}
+@media all and (max-width: 767px) {
+  .glist {
+    &__warning {
+      max-width: 582px;
+      font-size: 16px;
+      padding: 13px 18px;
+    }
+  }
+}
+@media all and (max-width: 639px) {
+  .glist {
+    &__item {
+      max-width: 300px;
+    }
+    &__item-image {
+      display: block;
+      max-width: 250px;
+      margin: 0 auto;
+    }
+    &__warning {
+      max-width: 300px;
+      text-align: center;
+    }
+  }
+}
