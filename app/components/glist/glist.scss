@@ -110,6 +110,9 @@
 }
 @media all and (max-width: 767px) {
   .glist {
+    &__title {
+      line-height: 1;
+    }
     &__warning {
       max-width: 582px;
       font-size: 16px;
