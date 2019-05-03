@@ -14,19 +14,29 @@ svg
 a
 	color: #ffffff
 
-.form-wrap
-	width: 330px
-	flex: none
-	background: url("../img/form-bg.png") no-repeat
-	background-size: cover
-
 .form
+	position: relative
 	width: 290px
 	margin: 0 auto
+	z-index: auto
 	flex: none
 	background: #ffffff
 	box-shadow: 0 0 0px 4px #b6475f
 	border-radius: 5px
+
+.form:before
+	position: absolute
+	content: ""
+	background: repeating-linear-gradient( -45deg, rgba(255, 255, 255, 0) -10px, rgba(255, 255, 255, 0) 10px, #a04858 10px, #a04858 20px)
+	top: 0px
+	width: 330px
+	z-index: -1
+	height: 100%
+	left: 50%
+	transform: translateX(-50%)
+	+r(479)
+		display: none
+
 
 .form-header
 	position: relative
@@ -187,7 +197,7 @@ a
 	align-items: center
 	justify-content: center
 	width: 100%
-	height: 65px
+	height: 55px
 	cursor: pointer
 	background-color: #ffffff
 	background-image: linear-gradient(to right, #6ac259 0%, #70d05d 51%, #6ac259 100%)
@@ -233,16 +243,48 @@ a
 	font-size: 15px
 	line-height: 1.1
 
+.timer-box
+	margin-bottom: 15px
+
 .timer-title
 	color: #000000
 	font-size: 20px
 	line-height: 1.2
 	max-width: 180px
-	margin: 0 auto 10px
+	margin: 0 auto 7px
 	text-align: center
 
 .timer-title_pink
 	color: #c6637b
+
+.timer-wrap
+	display: flex
+	justify-content: center
+
+.timer-hours,
+.timer-minutes,
+.timer-seconds
+	display: flex
+
+.timer-minutes
+	margin: 0 10px
+
+.timer-item
+	padding: 6px 9px
+	border-radius: 5px
+	border: 2px solid #b6475f
+	color: #222222
+	font-size: 24px
+	line-height: 1
+	font-weight: 700
+
+.timer-item + .timer-item
+	margin-left: 3px
+
+.block-red
+	background-image: url("../img/section-red.png"), linear-gradient(to right, #d14358, #83263d)
+	background-position: center
+	background-size: cover
 
 .container
 	width: 100%
@@ -284,4 +326,5 @@ a
 
 .text-nowrap
 	white-space: nowrap
+
 
