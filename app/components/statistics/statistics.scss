@@ -92,6 +92,7 @@
 
 .statistics-button {
   position: absolute;
+  z-index: 3;
   left: 50%;
   bottom: 6px;
   transform: translate(-50%, 50%);
@@ -147,13 +148,12 @@
   }
 
   .statistics-slider {
-    max-width: 500px;
+    max-width: 460px;
     margin: 20px auto;
   }
 
   .swiper-slide {
     max-width: 460px;
-    margin: 0 20px;
   }
 
 
@@ -179,9 +179,6 @@
     padding: 25px 0 55px;
   }
 
-  .swiper-slide {
-    max-width: 400px;
-  }
 
   .swiper-button-prev.statistics__swiper-button-prev {
     left: 0px;

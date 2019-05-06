@@ -16,7 +16,7 @@ a
 
 .form
 	position: relative
-	width: 290px
+	width: 260px
 	margin: 0 auto
 	z-index: auto
 	flex: none
@@ -27,9 +27,9 @@ a
 .form:before
 	position: absolute
 	content: ""
-	background: repeating-linear-gradient( -45deg, rgba(255, 255, 255, 0) -10px, rgba(255, 255, 255, 0) 10px, #a04858 10px, #a04858 20px)
+	background: repeating-linear-gradient( -45deg, rgba(255, 255, 255, 0) -10px, rgba(255, 255, 255, 0) 10px, rgba(255, 255, 255, 0.3) 10px, rgba(255, 255, 255, 0.3) 20px)
 	top: 0px
-	width: 330px
+	width: 300px
 	z-index: -1
 	height: 100%
 	left: 50%
@@ -51,14 +51,14 @@ a
 	left: 0
 	width: 0
 	height: 0
-	border-left: 145px solid transparent
-	border-right: 145px solid transparent
+	border-left: 127px solid transparent
+	border-right: 127px solid transparent
 	border-top: 21px solid #f6eef0
 
 .form-title
 	color: #000000
 	font-size: 23px
-	line-height: 1.2
+	line-height: 1.1
 	font-weight: 500
 	text-align: center
 	margin-bottom: 15px
@@ -138,7 +138,7 @@ a
 
 .x_price_current
 	display: inline-block
-	font-size: 44px
+	font-size: 40px
 	line-height: 0.8
 	font-weight: 900
 
@@ -197,7 +197,7 @@ a
 	align-items: center
 	justify-content: center
 	width: 100%
-	height: 55px
+	min-height: 65px
 	cursor: pointer
 	background-color: #ffffff
 	background-image: linear-gradient(to right, #6ac259 0%, #70d05d 51%, #6ac259 100%)
@@ -211,11 +211,13 @@ a
 .button__text-1
 	display: inline-block
 	font-size: 27px
+	line-height: 1
 	font-weight: 700
 
 .button__text-2
 	display: inline-block
 	font-size: 20px
+	line-height: 1
 	font-weight: 400
 
 .price-descr
@@ -227,7 +229,7 @@ a
 	margin-top: 15px
 
 .form-footer
-	margin-top: 10px
+	margin-top: 15px
 	display: flex
 	align-items: center
 	justify-content: center
