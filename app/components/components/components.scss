@@ -1,0 +1,186 @@
+.components {
+  padding-top: 61px;
+  &__top-banner {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 890px;
+    margin: 0 auto 44px;
+  }
+  &__product-box {
+    display: block;
+    width: 100%;
+    max-width: 182px;
+  }
+  &__banner-title {
+    display: block;
+    max-width: 400px;
+    margin-top: 59px;
+    text-align: left;
+  }
+  &__banner-name {
+    margin-bottom: 15px;
+    color: #1f1f1f;
+    font-size: 47px;
+    font-weight: 900;
+    line-height: 32px;
+    span {
+      color: #c84152;
+    }
+  }
+  &__bottom-info {
+    color: #444444;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+  }
+  &__go-to-order {
+    display: block;
+    position: relative;
+    width: 242px;
+    margin-top: 59px;
+    padding: 8px 0 12px;
+    color: #ffffff;
+    background-image: linear-gradient(to right, #6ac259 0%, #70d05d 51%, #6ac259 100%);
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: inset 0px -5px 0px #5cab4d;
+    &:before {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 122px;
+      height: 60px;
+      background: url("../img/natural-arrow.png") no-repeat;
+      top: 77px;
+      left: -100px;
+    }
+  }
+  &__title {
+    display: block;
+    max-width: 725px;
+    margin: 68px auto 72px;
+    text-align: center;
+  }
+  /*_____center-pack_*/
+  &__center-pack {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__pack {
+    display: block;
+    width: 100%;
+    max-width: 267px;
+    top: 0;
+  }
+  &__product {
+    display: block;
+    position: absolute;
+    width: 100%;
+    max-width: 242px;
+    margin-left: 43px;
+    top: 187px;
+  }
+  /*_________COMPONENTS-box_*/
+  &__items-box {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1016px;
+    margin: 0 auto;
+  }
+  &__item {
+    display: block;
+    width: 100%;
+    max-width: 323px;
+    text-align: center;
+  }
+  &__item-image {
+    display: block;
+    margin: 0 auto;
+    img {
+      margin: 0 auto;
+    }
+  }
+  &__subtitle {
+    display: block;
+    margin-top: 20px;
+    color: #2f1a13;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+  }
+  &__description {
+    color: #444444;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+  /*___additional_*/
+  &__additional-info {
+    display: block;
+    max-width: 828px;
+    margin: 58px auto 100px;
+    padding: 15px 40px 18px;
+    background-color: #edf7e0;
+    color: #2f1a13;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 44px;
+  }
+
+
+}
+
+
+
+
+
+
+/*______STYLE FOR DIVIDER____*/
+.divider {
+  position: absolute;
+  width: 100%;
+  height: 11px;
+  left: 0;
+  &:before {
+    content: "";
+    position: absolute;
+    width: calc(50% - 14px);
+    height: 1px;
+    top: 0;
+    left: 0;
+    background: rgba(202, 202, 202, 0.58);
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    width: calc(50% - 14px);
+    height: 1px;
+    top: 0;
+    left: auto;
+    right: 0;
+    background: rgba(202, 202, 202, 0.58);
+  }
+  &__triangle {
+    width: 30px;
+    height: 11px;
+    fill: rgba(202, 202, 202, 0.58);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+}
