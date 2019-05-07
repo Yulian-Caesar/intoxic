@@ -1,5 +1,5 @@
 .use {
-  padding: 70px 0;
+  padding: 98px 0 110px;
 }
 
 .use-title {
@@ -93,6 +93,10 @@
 }
 
 @media screen and (max-width: 1189px){
+  .use {
+    padding: 70px 0 90px;
+  }
+
   .use-item__number {
     width: 46px;
     height: 46px;

@@ -1,6 +1,6 @@
 .glist {
   &.-danger-glist {
-    padding: 89px 0 63px;
+    padding: 65px 0 63px;
   }
   &__danger-title {
     margin: 0 auto 49px;
@@ -19,8 +19,21 @@
     text-align: center;
   }
 }
+@media all and (max-width: 1189px) {
+  .glist {
+    &.-danger-glist {
+      padding: 30px 0 40px;
+    }
+    &__danger-title {
+      margin: 0 auto 20px;
+    }
+  }
+}
 @media all and (max-width: 1023px) {
   .glist {
+    &.-danger-glist {
+      padding: 60px 0 40px;
+    }
     &__danger-title {
       margin: 0 auto 20px;
     }
@@ -28,9 +41,17 @@
       font-size: 18px;
     }
   }
+  .glist__subtitle {
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 15px auto 10px;
+  }
 }
 @media all and (max-width: 767px) {
   .glist {
+    &.-danger-glist {
+      padding: 60px 0 30px;
+    }
     &__damger-title {
       line-height: 1;
     }
@@ -41,9 +62,23 @@
 }
 @media all and (max-width: 639px) {
   .glist {
+    &__description {
+      font-size: 16px;
+    }
     &__danger-warning {
       font-size: 16px;
       max-width: 300px;
+    }
+    &.-danger-glist {
+      padding: 50px 0 30px;
+    }
+  }
+}
+
+@media all and (max-width: 479px) {
+  .glist {
+    &.-danger-glist {
+      padding: 50px 0 25px;
     }
   }
 }

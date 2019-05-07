@@ -1,6 +1,5 @@
 var sliderSelector = '.swiper-container',
     options = {
-        init: false,
         loop: true,
         speed:700,
         slidesPerView: 'auto', // or 'auto'
@@ -50,5 +49,11 @@ var sliderSelector = '.swiper-container',
     };
 var mySwiper = new Swiper(sliderSelector, options);
 
-// Initialize slider
-mySwiper.init();
+
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 1000);
+});

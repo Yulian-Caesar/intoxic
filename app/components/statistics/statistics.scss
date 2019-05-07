@@ -1,6 +1,6 @@
 .statistics {
   position: relative;
-  padding: 70px 0 115px;
+  padding: 75px 0 115px;
   color: #ffffff;
 }
 
@@ -74,7 +74,7 @@
   font-size: 23px;
   line-height: 1.4;
   font-weight: 500;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .statistics-content__text {
@@ -102,7 +102,7 @@
 
 @include r(1189) {
   .statistics {
-    padding: 60px 0 85px;
+    padding: 70px 0 100px;
   }
 
   .statistics-title_smaller {
@@ -135,6 +135,11 @@
 
   .statistics-title_smaller {
     font-size: 24px;
+  }
+
+  .statistics-button {
+    bottom: 0;
+    transform: translate(-50%, 50%);
   }
 
 }
@@ -187,6 +192,15 @@
 
   .swiper-button-next.statistics__swiper-button-next {
     right: 0px;
+  }
+
+  .statistics-button {
+    max-width: 240px;
+    min-height: 50px;
+  }
+
+  .statistics-button .button__text-1 {
+    font-size: 24px;
   }
 
 }

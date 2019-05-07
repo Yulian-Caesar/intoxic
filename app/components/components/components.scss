@@ -3,7 +3,6 @@
   &__top-banner {
     display: flex;
     position: relative;
-    justify-content: space-between;
     align-items: flex-start;
     width: 100%;
     max-width: 876px;
@@ -15,13 +14,24 @@
     max-width: 182px;
   }
   &__banner-title {
+    position: relative;
     display: block;
     max-width: 400px;
-    margin-top: 62px;
+    margin: 57px 0 0 20px;
     text-align: left;
+    &:before {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 122px;
+      height: 60px;
+      background: url("../img/natural-arrow.png") no-repeat;
+      bottom: -20px;
+      right: -52px;
+    }
   }
   &__banner-name {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #1f1f1f;
     font-size: 47px;
     font-weight: 900;
@@ -37,29 +47,17 @@
   }
   &__go-to-order {
     display: block;
-    position: relative;
     width: 242px;
-    margin-top: 59px;
-    margin-right: 5px;
+    margin: 62px 0 0 25px;
     padding: 9px 0 11px;
     color: #ffffff;
     font-size: 30px;
     font-weight: 700;
     text-align: center;
-    &:before {
-      display: block;
-      position: absolute;
-      content: "";
-      width: 122px;
-      height: 60px;
-      background: url("../img/natural-arrow.png") no-repeat;
-      top: 77px;
-      left: -100px;
-    }
   }
   &__title {
     display: block;
-    max-width: 725px;
+    max-width: 730px;
     margin: 107px auto 72px;
     line-height: 55px;
     text-align: center;
@@ -194,8 +192,25 @@
   }
 
 }
+
+@media screen and (max-width: 1189px){
+  .components {
+    padding: 30px 0 40px;
+  }
+
+  .components__title {
+    margin: 85px auto 40px;
+  }
+}
+
 @media all and (max-width: 1023px) {
   .components {
+    &__banner-title {
+      &:before {
+        bottom: 20px;
+        right: -100px;
+      }
+    }
     &__top-banner {
       margin: 0 auto 20px;
     }
@@ -237,6 +252,14 @@
 }
 @media all and (max-width: 767px) {
   .components {
+    &__title {
+      margin-top: 30px;
+    }
+    &__banner-title {
+      &:before {
+        display: none;
+      }
+    }
     &__top-banner {
       max-width: 422px;
       flex-direction: column;
@@ -247,10 +270,7 @@
       line-height: 1.1;
     }
     &__go-to-order {
-      margin-top: 20px;
-      &:before {
-        display: none;
-      }
+      margin: 20px auto 0;
     }
     &__banner-title {
       margin-top: 20px;
