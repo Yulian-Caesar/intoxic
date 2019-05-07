@@ -1,0 +1,33 @@
+.last-section .home-girl {
+  z-index: 1;
+}
+
+.last-section .home-wrap {
+  padding-top: 100px;
+}
+
+.last-section__form {
+  margin: 0 20px;
+}
+
+.last-section .home-wrap {
+  align-items: center;
+}
+
+@media screen and (min-width: 1024px){
+  .last-section {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 1189px) {
+  .last-section .home-wrap {
+    padding: 100px 0 100px 380px;
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .last-section .home-wrap {
+    padding: 0;
+  }
+}

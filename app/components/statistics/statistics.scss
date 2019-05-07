@@ -1,6 +1,6 @@
 .statistics {
   position: relative;
-  padding: 70px 0 95px;
+  padding: 70px 0 115px;
   color: #ffffff;
 }
 
@@ -94,8 +94,8 @@
   position: absolute;
   z-index: 3;
   left: 50%;
-  bottom: 6px;
-  transform: translate(-50%, 50%);
+  bottom: 0;
+  transform: translateX(-50%);
   max-width: 282px;
   min-height: 60px;
 }
