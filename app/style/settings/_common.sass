@@ -197,16 +197,19 @@ a
 	align-items: center
 	justify-content: center
 	width: 100%
-	min-height: 65px
 	cursor: pointer
-	background-color: #ffffff
-	background-image: linear-gradient(to right, #6ac259 0%, #70d05d 51%, #6ac259 100%)
+	background: linear-gradient(to right, #6ac259 0%, #70d05d 51%, #6ac259 100%)
 	border-radius: 5px
 	color: #ffffff
-	box-shadow: 0px 6px 0 0px #5cab4d
+	//box-shadow: inset 0px -5px 0px 0 #5cab4d
+	box-shadow:  0px 5px 0px 0 #5cab4d
+	outline: none
 
 .button:hover
-	background-image: linear-gradient(to right, #429b31 0%, #70d05d 51%, #429b31 100%)
+	background: linear-gradient(to right, #429b31 0%, #70d05d 51%, #429b31 100%)
+
+.form-button
+	min-height: 70px
 
 .button__text-1
 	display: inline-block
@@ -331,3 +334,7 @@ a
 	white-space: nowrap
 
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+	.button
+		display: inline-block
+		box-shadow: inset 0px -px 0px 0 #5cab4d, 0 5px 0 0 #5cab4d
