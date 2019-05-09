@@ -47,6 +47,12 @@
   transition: .5s;
   transform: translateY(-50%);
   margin-top: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .reviews__swiper-button-prev:hover,
@@ -154,20 +160,12 @@
   transition: .6s;
 }
 
-.reviews-slide__button:hover {
-  transform: translate(-50%, 50%) rotate(-90deg);
-}
-
 .reviews-slide.active .reviews-slide__text {
   height: auto;
 }
 
 .reviews-slide.active .reviews-slide__button {
   transform: translate(-50%, 50%) rotate(-180deg);
-}
-
-.reviews-slide.active .reviews-slide__button:hover {
-  transform: translate(-50%, 50%) rotate(-90deg);
 }
 
 .reviews-slide.active .reviews-slide__text:after {
@@ -240,6 +238,7 @@
   .reviews-conclusion {
     font-size: 16px;
   }
+
 
 }
 

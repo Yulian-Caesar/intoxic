@@ -6,6 +6,7 @@ var reviewsSlider = '.reviews-slider',
         spaceBetween: 30,
         effect: 'slide',
         grabCursor: true,
+        shortSwipes: false,
         navigation: {
             nextEl: '.reviews__swiper-button-next',
             prevEl: '.reviews__swiper-button-prev',

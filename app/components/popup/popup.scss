@@ -34,19 +34,40 @@
 }
 
 @media screen and (min-width: 1024px){
+  //hide scrollbar
+  .ever-popup::-webkit-scrollbar { width: 0; }
+  .ever-popup { -ms-overflow-style: none; }
+  .ever-popup { overflow: -moz-scrollbars-none; }
   .ever-popup__close {
     width: 30px !important;
     height: 25px !important;
-    top: 60px !important;
+    top: 25px !important;
     right: 20px !important;
   }
-}
+  .ever-popup__inner {
+    padding-top: 0 !important;
+  }
 
+
+}
+/*@media screen and (max-width: 4440px) {
+  .popup-wrap {
+    padding: 35px;
+  }
+  .ever-popup__inner {
+    margin: 20px auto 0 !important;
+    padding-top: 0 !important;
+  }
+  .ever-popup__close {
+    top: 6px !important;
+  }
+}*/
 @media screen and (max-width: 1023px){
   .popup-figure,
   .popup-product {
     display: none;
   }
+
 
   .popup-wrap {
     background: transparent;
