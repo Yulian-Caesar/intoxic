@@ -64,6 +64,7 @@
   .glist {
     &__item {
       margin-bottom: 30px;
+      max-width: 330px;
     }
     &__description {
       font-size: 17px;
@@ -71,6 +72,7 @@
     &__danger-warning {
       font-size: 16px;
       max-width: 300px;
+      margin-top: 10px;
     }
     &__subtitle {
       line-height: 1.1;
@@ -88,4 +90,8 @@
       padding: 50px 0 25px;
     }
   }
+  .glist__warning {
+    margin-top: 20px;
+  }
+
 }

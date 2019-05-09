@@ -115,11 +115,11 @@
     &__warning {
       max-width: 582px;
       font-size: 16px;
-      padding: 15px;
+      padding: 20px 15px;
     }
   }
   .glist__warning:before {
-    top: -33px;
+    top: -25px;
   }
 }
 @media all and (max-width: 639px) {
@@ -135,6 +135,7 @@
     &__warning {
       max-width: 300px;
       text-align: center;
+      margin-top: 10px;
     }
   }
 
@@ -148,4 +149,9 @@
   .glist__warning:before {
     top: -30px;
   }
+
+  .glist__warning {
+    margin-top: 20px;
+  }
+
 }
