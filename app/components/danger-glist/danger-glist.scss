@@ -62,12 +62,19 @@
 }
 @media all and (max-width: 639px) {
   .glist {
+    &__item {
+      margin-bottom: 30px;
+    }
     &__description {
-      font-size: 16px;
+      font-size: 17px;
     }
     &__danger-warning {
       font-size: 16px;
       max-width: 300px;
+    }
+    &__subtitle {
+      line-height: 1.1;
+      margin: 10px auto 5px;
     }
     &.-danger-glist {
       padding: 50px 0 30px;

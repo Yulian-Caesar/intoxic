@@ -237,12 +237,17 @@
     padding-top: 40px;
   }
 
+  .header {
+    margin-bottom: 20px;
+  }
+
   .home-box {
     padding-left: 0;
   }
 
   .home-girl {
-    max-width: 380px;
+    max-width: 410px;
+    left: -20px;
   }
 
   .home-wrap {
@@ -267,7 +272,7 @@
 
   .home-product {
     position: absolute;
-    left: 80px;
+    left: 125px;
     bottom: -40px;
     max-width: 270px;
   }

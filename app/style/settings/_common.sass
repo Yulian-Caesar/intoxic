@@ -175,11 +175,25 @@ a
 	position: relative
 	margin-bottom: 15px
 
-.input-box__img
+.input-box:after
+	content: ""
 	position: absolute
+	height: 24px
 	left: 20px
 	top: 50%
 	transform: translate(0, -50%)
+	background-repeat: no-repeat
+	background-size: contain
+	background-position: center
+
+.input-box_name:after
+	width: 21px
+	background-image: url("../img/user.svg")
+
+.input-box_tel:after
+	width: 24px
+	background-image: url("../img/tel.svg")
+
 
 
 .form-field
@@ -194,6 +208,10 @@ a
 	font-family: Roboto
 	font-size: 16px
 	line-height: 1
+	transition: .5s
+	&:hover,
+	&:focus
+		box-shadow: inset 0px 0px 8px 0px rgba(34, 35, 39, 0.3)
 
 .button
 	display: flex
@@ -317,6 +335,7 @@ a
 	text-align: center
 	+r(1189)
 		font-size: 44px
+		line-height: 1.1
 	+r(1023)
 		font-size: 36px
 		line-height: 1.1

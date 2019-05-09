@@ -59,6 +59,9 @@
 @media all and (max-width: 1189px) {
   .steps {
     padding: 70px 0 90px;
+    &__title {
+      margin: 0 auto 40px;
+    }
   }
 }
 
@@ -106,17 +109,32 @@
 @media all and (max-width: 639px) {
   .steps {
     &__numbers-box {
-      max-width: 300px;
+      max-width: 100%;
       flex-wrap: wrap;
       flex-direction: column;
       align-items: center;
     }
     &__number-step {
-
+      display: flex;
+      align-items: center;
+      max-width: 100%;
       &.-second-down {
         margin-top: 0;
       }
 
+    }
+    &__number-image,
+    &__number-image.-first-number{
+      width: 110px;
+      max-width: 150px;
+      flex: none;
+      margin-right: 20px;
+    }
+    &__number-image.-first-number {
+      img {
+        max-width: 90px;
+        margin: 0 auto;
+      }
     }
     &__subtitle {
       margin: 5px auto;
@@ -136,10 +154,27 @@
     &__title {
       font-size: 22px;
     }
+    &__number-box {
+      max-width: 300px;
+    }
+    &__subtitle {
+      margin: 0 auto 5px;
+    }
+    &__number-step {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    &__number-content {
+      margin-top: 10px;
+    }
     &__number-image {
-      max-width: 140px;
+      margin: 0 auto;
       &.-first-number {
-        max-width: 86px;
+        margin: 0 auto;
+        img {
+          margin: 0 auto;
+        }
       }
     }
   }
